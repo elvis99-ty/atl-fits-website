@@ -1,0 +1,90 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+/* LEFT (LOGO) */
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 105px;
+  filter: invert(1);
+  object-fit: contain;
+}
+
+/* CENTER (NAV LINKS) */
+.nav-links {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
+}
+
+/* UNDERLINE ANIMATION (🔥 premium feel) */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #c8a96a;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.book-btn {
+  background-color: #c8a96a;
+  color: black;
+  padding: 12px 22px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 14px;
+}
+
+.book-btn:hover {
+  background-color: #b8965c;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    display: none; /* hide links for now */
+  }
+
+  .logo {
+    height: 45px;
+  }
+
+  .book-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,156 @@
+.footer {
+  background: black;
+  color: white;
+  padding: 50px 70px 20px;
+}
+
+/* GRID */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* COLUMN */
+.footer-col h4 {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* LOGO */
+.logo {
+  color: #c8a96a;
+  font-size: 20px;
+}
+
+/* TEXT */
+.footer-text {
+  font-size: 13px;
+  color: #bbb;
+  margin: 10px 0;
+}
+
+.footer-col p {
+  font-size: 13px;
+  color: #bbb;
+  margin: 6px 0;
+}
+
+/* LINKS */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li {
+  font-size: 13px;
+  margin: 6px 0;
+  cursor: pointer;
+  color: #bbb;
+}
+
+.footer-col li:hover {
+  color: #c8a96a;
+}
+
+/* SOCIALS */
+.socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.socials svg {
+  background: #c8a96a;
+  color: black;
+  padding: 6px;
+  border-radius: 50%;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* NEWSLETTER */
+.newsletter {
+  display: flex;
+  margin-top: 10px;
+}
+
+.newsletter input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: #111;
+  color: white;
+  font-size: 13px;
+}
+
+.newsletter button {
+  background: #c8a96a;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #777;
+  border-top: 1px solid #222;
+  padding-top: 10px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer {
+    padding: 40px 30px 20px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  .newsletter {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter button {
+    width: 100%;
+  }
+}
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+  .footer {
+    padding: 25px 15px;
+  }
+
+  .footer-col h4 {
+    font-size: 13px;
+  }
+
+  .footer-col p,
+  .footer-col li {
+    font-size: 12px;
+  }
+}

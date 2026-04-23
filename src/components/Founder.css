@@ -1,0 +1,44 @@
+.founder {
+  background: #f9f6f1;
+  padding: 60px 70px; /* 🔥 reduced */
+}
+
+.founder-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px; /* tighter */
+  align-items: center;
+}
+
+/* IMAGE */
+.founder-image img {
+  width: 100%;
+  height: 400px; /* 🔥 smaller than About */
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+/* TEXT */
+.founder-content h2 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.founder-content span {
+  color: #c8a96a;
+}
+
+.founder-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* SIGNATURE */
+.signature {
+  margin-top: 10px;
+  color: #c8a96a;
+  font-style: italic;
+  font-size: 14px;
+}
