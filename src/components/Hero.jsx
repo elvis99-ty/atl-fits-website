@@ -23,10 +23,6 @@ function Hero() {
         <p className="desc">
           We create custom designs that reflect your unique style and bring out the best in you.
         </p>
-
-        <button className="hero-btn">
-          View Collections →
-        </button>
       </div>
 
     </section>

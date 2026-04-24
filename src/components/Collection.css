@@ -60,6 +60,29 @@
   cursor: pointer;
 }
 
+/* ARROW BUTTON */
+.next-arrow {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #c8a96a;
+  color: black;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.next-arrow:hover {
+  background: #b8955c;
+  transform: scale(1.1);
+}
+
 @media (max-width: 1024px) {
   .collection-grid {
     grid-template-columns: repeat(3, 1fr);

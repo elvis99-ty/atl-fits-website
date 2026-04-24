@@ -5,8 +5,8 @@ import Collection from "./components/Collection"
 import Gallery from "./components/Gallery"
 import About from "./components/About"
 import Founder from "./components/Founder"
-import Contact from "./components/Contact"
 import Testimonials from "./components/Testimonials"
+import Contact from "./components/Contact"
 
 function App () {
   return (

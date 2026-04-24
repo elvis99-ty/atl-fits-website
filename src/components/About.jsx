@@ -44,8 +44,6 @@ function About() {
           </div>
         </div>
 
-        <button className="about-btn">Learn More →</button>
-
         <p className="signature">ATL FITS ✨</p>
       </div>
 

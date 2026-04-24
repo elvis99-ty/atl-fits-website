@@ -16,15 +16,18 @@
   background: #111;
   color: white;
   padding: 30px;
-  width: 320px;
+  width: 340px; /* slightly improved */
   border-radius: 12px;
   position: relative;
   text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  animation: fadeIn 0.3s ease;
 }
 
 /* TITLE */
 .modal h3 {
   margin-bottom: 20px;
+  font-size: 18px;
 }
 
 /* INPUTS */
@@ -38,7 +41,14 @@
   background: #222;
   color: white;
   font-size: 13px;
-  border-radius: 5px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* INPUT FOCUS */
+.modal input:focus,
+.modal select:focus {
+  border: 1px solid #c8a96a;
 }
 
 /* BUTTON */
@@ -50,7 +60,13 @@
   border: none;
   font-weight: 600;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #b8955c;
+  transform: translateY(-1px);
 }
 
 /* CLOSE BUTTON */
@@ -63,11 +79,76 @@
   color: white;
   font-size: 18px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
+.close-btn:hover {
+  color: #c8a96a;
+}
+
+/* SUCCESS MESSAGE */
+.success-message {
+  text-align: center;
+  padding: 25px 10px;
+}
+
+.success-message h3 {
+  color: #c8a96a;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.success-message p {
+  color: #ccc;
+  font-size: 13px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MOBILE */
 @media (max-width: 480px) {
   .modal {
     width: 90%;
     padding: 20px;
+  }
+}
+
+/* LOADER BOX */
+.loader-box {
+  text-align: center;
+  padding: 25px;
+}
+
+/* SPINNER */
+.loader {
+  width: 35px;
+  height: 35px;
+  border: 3px solid #333;
+  border-top: 3px solid #c8a96a;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  animation: spin 1s linear infinite;
+}
+
+/* TEXT */
+.loader-box p {
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* SPIN ANIMATION */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }

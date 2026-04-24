@@ -53,20 +53,46 @@
   color: #c8a96a;
 }
 
-/* SOCIALS */
+/* 🔥 SOCIALS (FIXED) */
 .socials {
   display: flex;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 12px;
+  margin-top: 15px;
 }
 
-.socials svg {
+.socials a {
+  width: 36px;
+  height: 36px;
   background: #c8a96a;
   color: black;
-  padding: 6px;
   border-radius: 50%;
-  font-size: 12px;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.socials a:hover {
+  background: #b8955c;
+  transform: translateY(-3px);
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: #c8a96a;
+  color: black;
+  padding: 10px 20px;
+  font-size: 13px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background: #b8955c;
 }
 
 /* NEWSLETTER */
@@ -101,9 +127,7 @@
   padding-top: 10px;
 }
 
-/* ---------------- RESPONSIVE ---------------- */
-
-/* TABLET */
+/* RESPONSIVE */
 @media (max-width: 1024px) {
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
@@ -114,7 +138,6 @@
   }
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr;
@@ -139,7 +162,6 @@
   }
 }
 
-/* SMALL PHONES */
 @media (max-width: 480px) {
   .footer {
     padding: 25px 15px;

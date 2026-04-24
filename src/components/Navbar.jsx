@@ -2,10 +2,11 @@ import './Navbar.css'
 import { FaCalendarAlt } from "react-icons/fa"
 import logo from '../assets/Face.png'
 import { useState } from 'react'
-import BookingModal from './BookingModal' // 🔥 import modal
+import BookingModal from './BookingModal'
 
 function Navbar() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   return (
     <>
@@ -22,6 +23,7 @@ function Navbar() {
           <a href="#about">ABOUT</a>
           <a href="#collections">COLLECTIONS</a>
           <a href="#gallery">GALLERY</a>
+          <a href='#ceo'>BEHIND THE BRAND</a>
           <a href="#contact">CONTACT</a>
         </div>
 

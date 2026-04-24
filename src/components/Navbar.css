@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 80px;
+  padding: 20px 80px;
   background-color: black;
   color: white;
   width: 100%;
@@ -68,6 +68,7 @@
 
 .book-btn:hover {
   background-color: #b8965c;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {

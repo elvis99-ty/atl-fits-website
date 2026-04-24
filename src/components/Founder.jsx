@@ -1,9 +1,9 @@
 import './Founder.css'
-import founderImg from '../assets/Bfounder.jpeg'
+import founderImg from '../assets/Her004.jpeg'
 
 function Founder() {
   return (
-    <section className="founder">
+    <section className="founder" id='ceo'>
 
       <div className="founder-container">
 
