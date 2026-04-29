@@ -1,5 +1,6 @@
 import './Contact.css'
 import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 function Contact() {
 
@@ -19,7 +20,7 @@ function Contact() {
           <h2 className="logo">ATL FITS</h2>
 
           <p className="footer-text">
-            Elegance is not about being noticed,  
+            Elegance is not about being noticed,
             it’s about being remembered.
           </p>
 
@@ -37,23 +38,44 @@ function Contact() {
         {/* QUICK LINKS */}
         <div className="footer-col">
           <h4>Quick Links</h4>
+
           <ul>
-            <li onClick={() => document.getElementById("home")?.scrollIntoView({ behavior: "smooth" })}>Home</li>
-            <li onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}>About Us</li>
-            <li onClick={() => document.getElementById("collections")?.scrollIntoView({ behavior: "smooth" })}>Collections</li>
-            <li onClick={() => document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" })}>Gallery</li>
-            <li onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>Contact</li>
+            <li onClick={() => document.getElementById("home")?.scrollIntoView({ behavior: "smooth" })}>
+              Home
+            </li>
+
+            <li onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}>
+              About Us
+            </li>
+
+            <li onClick={() => document.getElementById("collections")?.scrollIntoView({ behavior: "smooth" })}>
+              Collections
+            </li>
+
+            <li onClick={() => document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" })}>
+              Gallery
+            </li>
+
+            <li onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>
+              Contact
+            </li>
           </ul>
         </div>
 
         {/* CONTACT INFO */}
         <div className="footer-col">
           <h4>Contact Info</h4>
+
           <p>📞 +234 813 426 3249</p>
           <p>✉️ info@atlfits.com</p>
           <p>📍 Lagos, Nigeria</p>
 
-          <a href={whatsappLink} target="_blank" rel="noreferrer" className="whatsapp-btn">
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noreferrer"
+            className="whatsapp-btn"
+          >
             Chat on WhatsApp →
           </a>
         </div>
@@ -62,10 +84,16 @@ function Contact() {
         <div className="footer-col">
           <h4>Newsletter</h4>
 
-          <p>Subscribe to get updates on our latest collections.</p>
+          <p>
+            Subscribe to get updates on our latest collections.
+          </p>
 
           <div className="newsletter">
-            <input type="email" placeholder="Enter your email" />
+            <input
+              type="email"
+              placeholder="Enter your email"
+            />
+
             <button>➤</button>
           </div>
         </div>
@@ -73,7 +101,16 @@ function Contact() {
       </div>
 
       <div className="footer-bottom">
-        © 2026 ATL FITS. All Rights Reserved.
+
+        <p>© 2026 ATL FITS. All Rights Reserved.</p>
+
+        <Link
+          to="/admin-login"
+          className="admin-link"
+        >
+          Admin Access
+        </Link>
+
       </div>
 
     </footer>

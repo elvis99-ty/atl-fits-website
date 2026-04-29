@@ -67,9 +67,9 @@ function BookingModal({ isOpen, onClose }) {
                 required
               >
                 <option value="">Select Reason</option>
-                <option>Fitting</option>
-                <option>Measurement</option>
-                <option>Consultation</option>
+                <option>FITTING</option>
+                <option>MEASUREMENT</option>
+                <option>CONSULTATION</option>
               </select>
 
               <button type="submit" className="submit-btn">

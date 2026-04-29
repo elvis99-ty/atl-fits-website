@@ -31,7 +31,7 @@ function Founder() {
             but leave a lasting impression.
           </p>
 
-          <h4 className="signature">— TOYIN AREMU</h4>
+          <h4 className="signature">— OLUWATOYIN EMMANUEL</h4>
         </div>
 
       </div>

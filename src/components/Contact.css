@@ -127,6 +127,24 @@
   padding-top: 10px;
 }
 
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-link {
+  font-size: 14px;
+  color: #999;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.admin-link:hover {
+  color: blue;
+}
+
 /* RESPONSIVE */
 @media (max-width: 1024px) {
   .footer-container {
