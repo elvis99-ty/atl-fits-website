@@ -64,12 +64,12 @@ const AdminDashboard = () => {
       await axios.patch(
       `https://atl-fits-website-backend.onrender.com/api/products/availability/${id}`,
       {},
-        {
-          headers: {
-            Authorization: `Bearer ${token}`
-          }
-        }
-      )
+  {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  }
+)
 
       fetchProducts()
 
