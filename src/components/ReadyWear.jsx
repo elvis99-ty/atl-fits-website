@@ -17,9 +17,8 @@ function ReadyWear() {
     try {
 
       const response = await axios.get(
-        'http://localhost:5000/api/products'
-      )
-
+    'https://atl-fits-website-backend.onrender.com/api/products'
+)
       setProducts(response.data)
 
     } catch (error) {

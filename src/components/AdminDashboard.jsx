@@ -33,7 +33,7 @@ const AdminDashboard = () => {
       )
 
       const response = await axios.get(
-        'http://localhost:5000/api/products/admin/all',
+        'https://atl-fits-website-backend.onrender.com/api/products/admin/all',
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -62,7 +62,7 @@ const AdminDashboard = () => {
       )
 
       await axios.patch(
-        `http://localhost:5000/api/products/publish/${id}`,
+       `https://atl-fits-website-backend.onrender.com/api/products/publish/${id}`,
         {},
         {
           headers: {
@@ -92,7 +92,7 @@ const AdminDashboard = () => {
       )
 
       await axios.patch(
-        `http://localhost:5000/api/products/availability/${id}`,
+        `https://atl-fits-website-backend.onrender.com/api/products/availability/${id}`
         {},
         {
           headers: {
@@ -128,7 +128,7 @@ const AdminDashboard = () => {
       )
 
       await axios.delete(
-        `http://localhost:5000/api/products/${id}`,
+        `https://atl-fits-website-backend.onrender.com/api/products/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -212,7 +212,7 @@ const AdminDashboard = () => {
       data.append('image', image)
 
       await axios.post(
-        'http://localhost:5000/api/products',
+        https://atl-fits-website-backend.onrender.com,
         data,
         {
           headers: {
