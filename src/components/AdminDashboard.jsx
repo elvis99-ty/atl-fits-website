@@ -62,8 +62,8 @@ const AdminDashboard = () => {
       )
 
       await axios.patch(
-       `https://atl-fits-website-backend.onrender.com/api/products/publish/${id}`,
-        {},
+      `https://atl-fits-website-backend.onrender.com/api/products/availability/${id}`,
+      {},
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -212,8 +212,8 @@ const AdminDashboard = () => {
       data.append('image', image)
 
       await axios.post(
-        https://atl-fits-website-backend.onrender.com,
-        data,
+      'https://atl-fits-website-backend.onrender.com/api/products',
+      data,
         {
           headers: {
             Authorization: `Bearer ${token}`
